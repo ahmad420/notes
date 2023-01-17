@@ -4,6 +4,7 @@ import LogIn from "./pages/LogIn";
 import Register from "./pages/Register";
 import Notes from "./pages/Notes";
 import Main from "./pages/Main";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="notes" element={<Notes />} />
           <Route path="main" element={<Main />} />
-        
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </Router>
